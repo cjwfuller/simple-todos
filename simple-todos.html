@@ -1,13 +1,23 @@
 <head>
   <title>Todo List</title>
 </head>
- 
+
 <body>
   <div class="container">
     <header>
       <h1>Todo List</h1>
     </header>
- 
+
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+      </form>
+    </header>
+  </div>
+
     <ul>
       {{#each tasks}}
         {{> task}}
@@ -15,7 +25,7 @@
     </ul>
   </div>
 </body>
- 
+
 <template name="task">
   <li>{{text}}</li>
 </template>
